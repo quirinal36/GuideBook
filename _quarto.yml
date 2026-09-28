@@ -1,0 +1,96 @@
+# ─────────────────────────────────────────────────────────────
+# 책 기본 정보 — 제목·부제·저자는 여기만 바꾸면 세 포맷(HTML/EPUB/PDF)에 모두 반영된다.
+# ─────────────────────────────────────────────────────────────
+book:
+  title: "원장님, 오늘 밤에 홈페이지 하나 만드세요"
+  subtitle: "AI와 대화로 만드는 우리 학원 사이트와 게임"
+  author: "주식회사 렛츠코딩"          # (임시)
+  date: last-modified
+  output-file: "guidebook"             # _book/guidebook.pdf, guidebook.epub
+  site-url: "https://letscoding.kr/book/"   # 플레이스홀더: 실제 게시 경로로 교체
+  cover-image: assets/cover.png
+  search: true
+
+  chapters:
+    - index.qmd
+
+    - part: "1부. 준비 (읽기만 해도 되는 부분)"
+      chapters:
+        - chapters/ch01-ai-era.qmd
+        - chapters/ch02-prep.qmd
+
+    - part: "2부. 1주차 — 오늘 밤에 링크 하나 만들기"
+      chapters:
+        - chapters/ch03-page-design.qmd
+        - chapters/ch04-build-page.qmd
+        - chapters/ch05-deploy.qmd
+
+    - part: "3부. 2주차 — 상담 문의 받기"
+      chapters:
+        - chapters/ch06-contact-form.qmd
+        - chapters/ch07-privacy.qmd
+
+    - part: "4부. 3주차 — 우리 과목으로 게임 만들기"
+      chapters:
+        - chapters/ch08-why-games.qmd
+        - chapters/ch09-game-recipes.qmd
+        - chapters/ch10-polish-deploy.qmd
+
+    - part: "5부. 4주차 — 보여주고, 듣고, 고치기"
+      chapters:
+        - chapters/ch11-share.qmd
+        - chapters/ch12-lounge-upload.qmd
+
+    - part: "6부. 그 다음 — 학원에 적용하기"
+      chapters:
+        - chapters/ch13-for-coding-academy.qmd
+        - chapters/ch14-for-general-academy.qmd
+        - chapters/ch15-lounge.qmd
+
+  appendices:
+    - chapters/appendix-a-prompts.qmd
+    - chapters/appendix-b-troubleshooting.qmd
+    - chapters/appendix-c-privacy-checklist.qmd
+    - chapters/appendix-d-cohort-schedule.qmd
+    - chapters/appendix-e-glossary.qmd
+
+project:
+  type: book
+  output-dir: _book
+  resources:
+    - assets/qr/*.png
+    - assets/qr/*.svg
+
+lang: ko
+number-sections: true
+crossref:
+  chapters: true        # 그림 번호를 "그림 5.1" 처럼 장 단위로
+
+format:
+  # 웹판 — letscoding.kr 하위 경로에 게시 예정
+  html:
+    theme: cosmo
+    toc: true
+    mainfont: "Pretendard, 'Noto Sans KR', sans-serif"
+    monofont: "D2Coding, 'Noto Sans Mono CJK KR', monospace"
+
+  # 전자책(서점 유통)
+  epub:
+    toc: true
+    epub-cover-image: assets/cover.png
+
+  # PDF(전자책 PDF + 인쇄) — typst 엔진
+  typst:
+    papersize: a5
+    margin:
+      x: 2cm
+      y: 2.2cm
+    fontsize: 10pt
+    # book 템플릿(orange-book)은 판형·여백·글자 크기를 넘기지 않아 partial 을 고쳐 쓴다
+    template-partials:
+      - assets/typst/typst-show.typ
+    # 폰트: book 템플릿은 mainfont/codefont 를 무시하므로 assets/typst/fonts.typ 에서 지정
+    font-paths: fonts
+    include-in-header:
+      - file: assets/typst/fonts.typ
+    toc: true

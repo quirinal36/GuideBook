@@ -1,0 +1,57 @@
+{
+  "short_domain": "https://letscoding.kr",
+  "links": {
+    "05-1": {
+      "id": "05-1",
+      "short_path": "/b/05-1",
+      "short_url": "https://letscoding.kr/b/05-1",
+      "short_label": "letscoding.kr/b/05-1",
+      "target_url": null,
+      "youtube_id": null,
+      "kind": "video",
+      "chapter": "ch05",
+      "title": "배포 따라하기 영상",
+      "qr_png": "assets/qr/05-1.png",
+      "qr_svg": "assets/qr/05-1.svg"
+    },
+    "06-1": {
+      "id": "06-1",
+      "short_path": "/b/06-1",
+      "short_url": "https://letscoding.kr/b/06-1",
+      "short_label": "letscoding.kr/b/06-1",
+      "target_url": null,
+      "youtube_id": null,
+      "kind": "video",
+      "chapter": "ch06",
+      "title": "문의 폼 연결 영상",
+      "qr_png": "assets/qr/06-1.png",
+      "qr_svg": "assets/qr/06-1.svg"
+    },
+    "10-1": {
+      "id": "10-1",
+      "short_path": "/b/10-1",
+      "short_url": "https://letscoding.kr/b/10-1",
+      "short_label": "letscoding.kr/b/10-1",
+      "target_url": null,
+      "youtube_id": null,
+      "kind": "video",
+      "chapter": "ch10",
+      "title": "게임 다듬기와 배포 영상",
+      "qr_png": "assets/qr/10-1.png",
+      "qr_svg": "assets/qr/10-1.svg"
+    },
+    "12-1": {
+      "id": "12-1",
+      "short_path": "/b/12-1",
+      "short_url": "https://letscoding.kr/b/12-1",
+      "short_label": "letscoding.kr/b/12-1",
+      "target_url": null,
+      "youtube_id": null,
+      "kind": "page",
+      "chapter": "ch12",
+      "title": "라운지 업로드 안내 페이지",
+      "qr_png": "assets/qr/12-1.png",
+      "qr_svg": "assets/qr/12-1.svg"
+    }
+  }
+}

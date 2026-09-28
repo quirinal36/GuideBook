@@ -1,0 +1,10 @@
+/* qrlink 숏코드 — 웹판 스타일 */
+.qrlink { margin: 1.5rem 0; }
+.qrlink-video { position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: 8px; overflow: hidden; background: #000; }
+.qrlink-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.qrlink-meta { margin-top: .5rem; font-size: .95rem; }
+.qrlink-meta code { font-size: .9em; }
+.qrlink-card { display: block; padding: 1rem 1.25rem; border: 1px solid #d0d7de; border-radius: 8px; text-decoration: none; color: inherit; }
+.qrlink-card:hover { border-color: #2780e3; background: rgba(39, 128, 227, .04); }
+.qrlink-card .qrlink-title { font-weight: 600; display: block; margin-bottom: .25rem; }
+.qrlink-missing { padding: .75rem 1rem; border: 2px dashed #d9534f; color: #d9534f; font-weight: 600; }

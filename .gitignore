@@ -1,0 +1,17 @@
+# 빌드 결과물
+_book/
+.quarto/
+/*.typ
+
+# Python
+*.pyc
+__pycache__/
+.venv/
+
+# 편집기·OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+/.quarto/
+**/*.quarto_ipynb

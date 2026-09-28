@@ -1,0 +1,5 @@
+id,short_path,target_url,kind,chapter,title,notes
+05-1,/b/05-1,TODO,video,ch05,배포 따라하기 영상,유튜브 업로드 후 target_url 교체
+06-1,/b/06-1,TODO,video,ch06,문의 폼 연결 영상,유튜브 업로드 후 target_url 교체
+10-1,/b/10-1,TODO,video,ch10,게임 다듬기와 배포 영상,유튜브 업로드 후 target_url 교체
+12-1,/b/12-1,TODO,page,ch12,라운지 업로드 안내 페이지,웹판 페이지 URL로 교체
