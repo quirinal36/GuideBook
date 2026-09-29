@@ -1,0 +1,15 @@
+{
+  "runs": [
+    {
+      "date": "2026-09-28T13:40:27.024594+00:00",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "files": 60,
+      "usage_available": false
+    }
+  ],
+  "total_input_tokens": 0,
+  "total_output_tokens": 0,
+  "usage_available": false,
+  "note": "Agent tools did not expose token counts. Zeros are placeholders, not measured zero usage."
+}

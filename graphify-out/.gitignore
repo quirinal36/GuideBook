@@ -1,0 +1,5 @@
+# Machine-local interpreter, scan root, cache and temporary extraction files
+.graphify_*
+!.graphify_labels.json
+.needs_update
+cache/
